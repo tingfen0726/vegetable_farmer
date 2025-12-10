@@ -80,7 +80,7 @@ function updateStateDisplay() {
     if(gameState == "playing" || gameState == "pause"){
         level_text = "x" + level_speed.toFixed(1);
     }
-    stateDisplay.textContent = `state : ${gameState} | money : $${money} | arms : ${tool_text[index]} | leave : ${level_text}`;
+    stateDisplay.textContent = `state : ${gameState} | money : $${money} | arms : ${tool_text[index]} | level : ${level_text}`;
 }
 
 function everyinterval(n) {
@@ -687,4 +687,5 @@ diffBtn.addEventListener("click", () => {
     }
 });
 // 初始化頁面樣式
+
 document.body.style.overflowY = "hidden";
