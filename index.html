@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+        <link rel="stylesheet" href="assets/art.css">
+    </head>
+    <body onload="startGame()">
+        <div class="tv">
+            <button id="start">start</button>
+            <button id="stop">stop</button>
+            <button id="reset">reset</button>
+            <button id="difficulty">normal</button>
+            <button id="store">store</button>
+        </div>
+        <p id = "state">state : intro | money : $0 | arms : rake | leave : none</p>
+        <div id="shop" style="display:none;">
+            <h2>tool store</h2>
+            <div class="item-box">
+                <img src="assets/picture/rake_show.png" id="rake" title="耙子，可打出一點傷害">
+            </div>
+
+            <div class="item-box">
+                <img src="assets/picture/triple_rake_show.png" id="t_rake" title="三倍耙子，同時發射三支耙子">
+                <span class="price">$100</span>
+            </div>
+
+            <div class="item-box">
+                <img src="assets/picture/shovel_show.png" id="shovel" title="鏟子，可打出三點傷害">
+                <span class="price">$50</span>
+            </div>
+            <br>
+            <hr>
+            <div class="item-box">
+                <img src="assets/picture/cabbage_show.png" id="cabbage" title="高麗菜，具有一點生命值，下落速度一般">
+            </div>
+            <div class="item-box">
+                <img src="assets/picture/carrot_show.png" id="carrot" title="胡蘿蔔，具有三點生命值，下落速度緩慢">
+            </div>
+            <div class="item-box">
+                <img src="assets/picture/glod_money_show.png" id="glod_money" title="金幣，額外獲得 $5">
+                <span class="price">$30</span>
+            </div>
+        </div>
+
+        <script src="assets/control.js"></script>
+    </body>
+</html>
